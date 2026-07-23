@@ -1,7 +1,27 @@
 aid: alyne
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/alyne.png
 name: Alyne
-description: Alyne is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Alyne is a cloud-native governance, risk and compliance (GRC) platform, founded
+  in Munich in 2015 and acquired by Mitratech in 2021, where it is now offered as
+  Mitratech's Alyne. The platform pairs a large curated library of controls and
+  regulatory content with AI-assisted risk assessments, control mapping, maturity
+  scoring and reporting, helping enterprises and FinTechs manage cyber, operational
+  and third-party risk. Alyne is delivered as SaaS through app.alyne.com and is
+  positioned to integrate with common IT, compliance and data systems. As of this
+  profile Alyne exposes no public developer portal, API reference, or OpenAPI
+  definition; this record captures its public identity and probed domain security.
 url: https://raw.githubusercontent.com/api-evangelist/alyne/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,6 +34,14 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Governance Risk and Compliance
+- GRC
+- Risk Management
+- Compliance
+- Security
+- Cybersecurity
+- Enterprise Software
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +49,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/alyne-domain-security.yml
 - type: Website
   url: https://alyne.com/
+- type: Login
+  url: https://app.alyne.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
